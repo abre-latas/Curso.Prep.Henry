@@ -1,0 +1,77 @@
+VARIABLES:
+ Una variable, es una forma de almacenar a travez de un titulo un valor que va a luego interpretar el programa.
+  ej: var nombre = “franco”;
+ Esto quiere decir que cuando tipee nombre, sabe que debe interpretar esa variable como franco
+A esa luego si uno quiere se le puede asignar otoro valor, ejemplo,
+ Nombre= ”jeremias”, 
+Entonces desde ese momento la variable cambia su valor.
+Si no quiero que una variable cambie su valor, en ves de var  debemos creer una const Con esto le digo al interprete que la constante no se le puede luego cambiar el valor.
+
+TIPO DE DATOS
+Existe una cantidad finita de tipo de datos que puede almacenar las variables. En javascripts, son 6 tipo de datos nativos.
+En javascripts son los siguientes:
+
+STRING: Es una cadena de caracteres (palabras) Pero un numero tmb puede ser un string. Siempre empieza y termina con una comilla por ejemplo: var nombre = “franco”
+
+NUMEROS: Numero reales (enteros): var num= 13
+numeros reales (con decimales): var real= 13,2
+numeros negativos: var neg= -13
+
+BOOLEAN
+Puden tener solo dos valores, true o false
+Ej: Var megustalapizza = true
+EJ: Var nomegustalapizza= false
+
+NULL Y UNDIFINED
+
+NULL siginifica que no hay nada
+UNDIFINIED que no esta definido, es decir que no guarda nada dentro
+
+
+OPERADORES MATEMATICOS
+
+Los lenguajes de prog en gral soportan varios operadores matematicos, division, suma, resta, multiplicacion. Y el = es un operador de asignacion de valor
+el modulo % devuelve el resto de la division entera (aun no entiendo) 
+
+minuto 25: rever casteo de datos
+
+
+FUNCIONES
+
+. Agrupa códigos, los guarda y luego uno lo puede ejecutar. Luego uno lo puede “invocar” y este sera ejecutado. Se escribe de la siguiente forma, primero la palabra function, luego () {} Entre las paréntesis van los argumentos que recibe, es decir las variables. Y entre llaves el codigo de la funcion
+Function funcion1 (        )     {       } 
+
+Otra manera es declarar una variable
+Const  otrafuncion = function (        )     {       } 
+
+EJEMPLO DE UNA FUNCION:
+Function presentacion ( edad, nombre)  {
+console.log (“mi nombre es” + nombre)
+console.log (“tengo” + edad + “años”)
+}
+al funcionar para usarlo tendria que poner: Presentacion (28, “franco”) y al dar enter diria:
+mi nombre es franco
+tengo 28 años
+
+Lo que coloque entre los paréntesis, es el argumento (la variable que luego el intérprete va a llenar) que quiero que trabaje. 
+
+Todas las variables definidas entre las llaves de una Function, es un nuevo scope, es decir que todas las variables que estén definidas ahí dentro no se puede definir afuera, lo que hace que pueda ser posible una variable definida en una línea anterior tenga el mismo nombre que una variable definida dentro de una Functtion, 
+cuando convocó a una función todo lo que está entre las llaves se va a ejecutar
+Y todo código que esté debajo del return en un scoope, no se leerá, solo se puede retornar una vez. 
+
+
+
+
+Console.log: Es una función de javascript donde recibe un argumento y luego lo imprime
+
+Las funciones pueden retornar 
+Function presentacion ( )  {
+return “el mundo es una mierda”
+}
+Al ejecutar la función presentación, se procesa el mundo es una mierda
+
+Control de flujo: Aplicarle cierta lógica a la función. Nos permite hacer preguntas. E ir ejecutando ciertos codigos segun ciertas condiciones que van entre parentesis luego del comando if, estas son expresiones que luego se interpretan como true o false . 
+
+function puedomanejar (edad) { 
+if ( edad > 18) { return true; } return false;}
+
