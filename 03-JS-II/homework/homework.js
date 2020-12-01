@@ -66,7 +66,7 @@ function fizzBuzz(numero) {
 
 }
 
-function esPrimo(numero) {
+function esPrimo(numero) { 
   // Devuelve "true" si "numero" es primo
   // De lo contrario devuelve "falso"
   // Pista: un número primo solo es divisible por sí mismo y por 1
@@ -77,7 +77,7 @@ function esPrimo(numero) {
   for(var i = 2; i < numero; i++) {
   if(numero % i === 0) {return false} }
   return true
-}
+} 
 
 
   
